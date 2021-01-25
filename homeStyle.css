@@ -1,0 +1,104 @@
+/*
+Luke Mason
+CPSC 314: WebDev Final Project
+homeStyle.css
+Style sheet for home.php
+*/
+
+.header {
+    font-size: 40pt;
+    color: rgb(6, 50, 110);
+    outline-color: rgb(200,16,46);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: -1px 1px 2px rgb(200,16,46),
+				  1px 1px 2px rgb(200,16,46),
+				  1px -1px 0 rgb(200,16,46),
+                  -1px -1px 0 rgb(200,16,46); 
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.home-table {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto; 
+    margin-bottom: 20px;
+  }
+  
+    .home-table td, .home-table th {
+        border: 1px solid rgb(6, 50, 110);
+        padding: 8px;
+        color: rgb(200,16,46);
+    }
+  
+    .home-table tr:nth-child(even){background-color: white;}
+  
+    .home-table tr:hover {background-color: lightgray;}
+  
+    .home-table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: rgb(6, 50, 110);
+        color: whitesmoke;
+        text-align: center;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(6, 50, 110);
+    transition-duration: 0.4s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: whitesmoke;
+    color: rgb(6, 50, 110);
+}
+
+
+.subheading {
+    color: rgb(200,16,46);
+    font-size: 30pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto; 
+    width: 100%;
+    text-align: center;
+}
+
+.center-class {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+

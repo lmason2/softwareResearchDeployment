@@ -1,0 +1,172 @@
+/*
+Luke Mason
+CPSC 314: WebDev Final Project
+myLeagueStyle.css
+Style sheet for myLeague.php
+*/
+
+.header {
+    font-size: 40pt;
+    color: rgb(6, 50, 110);
+    outline-color: rgb(200,16,46);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: -1px 1px 2px rgb(200,16,46),
+				  1px 1px 2px rgb(200,16,46),
+				  1px -1px 0 rgb(200,16,46),
+                  -1px -1px 0 rgb(200,16,46); 
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.league-table {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+    .league-table td, .team-table th {
+        border: 1px solid rgb(6, 50, 110);
+        padding: 8px;
+        color: rgb(200,16,46);
+    }
+  
+    .league-table tr:nth-child(even){background-color: white;}
+  
+    .league-table tr:hover {background-color: lightgray;}
+  
+    .league-table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: rgb(6, 50, 110);
+        color: whitesmoke;
+        text-align: center;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(6, 50, 110);
+    transition-duration: 0.4s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: whitesmoke;
+    color: rgb(6, 50, 110);
+}
+
+
+.subheading {
+    color: rgb(200,16,46);
+    font-size: 30pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto; 
+    width: 80%;
+    text-align: left;
+}
+
+.center-class {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+
+.league-button-style {
+    background-color: rgb(6, 50, 110);
+    color: whitesmoke;
+    transition-duration: 0.4s;
+    border: 4px solid rgb(6, 50, 110);
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 15px 30px;
+    margin-top: 10px;
+}
+
+.league-button-style:hover {
+    background-color: white;
+    color: rgb(6, 50, 110);
+}
+  
+.select {
+    display: none; /*hide original SELECT element: */
+}
+  
+.select-selected {
+    background-color: DodgerBlue;
+}
+  
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+  
+  /* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+  
+  /* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+  
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+  
+  /* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+  
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}

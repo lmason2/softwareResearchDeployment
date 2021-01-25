@@ -1,0 +1,83 @@
+/*
+Luke Mason
+CPSC 314: WebDev Final Project
+createAccountStyle.css
+Style sheet for createAccount.php
+*/
+
+.header {
+    font-size: 40pt;
+    color: rgb(6, 50, 110);
+    outline-color: rgb(200,16,46);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: -1px 1px 2px rgb(200,16,46),
+				  1px 1px 2px rgb(200,16,46),
+				  1px -1px 0 rgb(200,16,46),
+                  -1px -1px 0 rgb(200,16,46); 
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 51%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.create-btn-style {
+    background-color: whitesmoke;
+    color: lightsteelblue;
+    transition-duration: 0.4s;
+    border: 4px solid whitesmoke;
+    font-size: 15pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.create-btn-style:hover {
+    background-color: lightsteelblue;
+    color: whitesmoke;
+}
+
+.ca-labels {
+    color:rgb(200,16,46);
+    font-size: 15pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+}
+
+.create-background {
+    position: relative;
+    background-color: lightsteelblue;
+    padding: 10px;
+    box-shadow: 5px 5px 5px lightgray;
+    margin-top: 140px;
+}
+
+input[type = text] {
+    border: none;
+    border-bottom: 3px solid rgb(200,16,46);
+    background-color: lightsteelblue;
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type = password] {
+    border: none;
+    border-bottom: 3px solid rgb(200,16,46);
+    background-color: lightsteelblue;
+    color: whitesmoke;
+}
+
+input[type = text]:focus {
+    outline: none;
+}
+
+input[type = password]:focus {
+    outline: none;
+}
