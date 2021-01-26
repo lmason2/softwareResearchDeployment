@@ -96,7 +96,7 @@ Page to let the user see their league
             $insertTeam =  "INSERT INTO teamInLeague (team_n, league_ID) VALUES (\"" . $team . "\", " . $league . ");";
             if ($conn->query($insertTeam) === TRUE){
                 // Successful insertion, redirect user
-                header("Location: http://barney.gonzaga.edu/~lmason2/htmlFiles/myLeague.php");
+                header("Location: https://gonzaga-intramural.herokuapp.com/myLeague.php");
             }
             else{
                 // Error inserting user

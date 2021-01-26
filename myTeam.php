@@ -111,7 +111,7 @@ Page to let the user see their team
                     $insert = "INSERT INTO userOnTeam (GU_ID, team_n, is_captain) VALUES (" . $userToAdd . ", \"" . $team_n . "\", 0);";
                     if ($conn->query($insert) === TRUE) {
                         // Player successfully inserted and reload teams
-                        header("Location: http://barney.gonzaga.edu/~lmason2/htmlFiles/myTeam.php");
+                        header("Location: https://gonzaga-intramural.herokuapp.com/myTeam.php");
                     }
                     else {
                         // Error adding the user
@@ -182,7 +182,7 @@ Page to let the user see their team
                     $conn = mysqli_connect($server, $username, $password, $database);
                     $insertPlayer =  "INSERT INTO userOnTeam (GU_ID, team_n, is_captain) VALUES (" . $GU_ID . ", \"" . $joinTeam . "\", 0);";
                     if ($conn->query($insertPlayer) === TRUE){
-                        header("Location: http://barney.gonzaga.edu/~lmason2/htmlFiles/myTeam.php");
+                        header("Location: https://gonzaga-intramural.herokuapp.com/myTeam.php");
                     }
                     else{
                         echo '<script>alert("Error adding player to team")</script>';
@@ -269,7 +269,7 @@ Page to let the user see their team
                         // Team inserted
                         if ($conn->query($insertPlayer) === TRUE) {
                             // Player inserted and reload page
-                            header("Location: http://barney.gonzaga.edu/~lmason2/htmlFiles/myTeam.php");
+                            header("Location: https://gonzaga-intramural.herokuapp.com/myTeam.php");
                         }
                         else {
                             // Error inserting team
@@ -319,7 +319,7 @@ Page to let the user see their team
                 $conn = mysqli_connect($server, $username, $password, $database);
                 $deleteQuery = "DELETE FROM userOnTeam WHERE GU_ID = " . $dropUser ."";
                 if($conn->query($deleteQuery) === TRUE){
-                    header("Location: http://barney.gonzaga.edu/~lmason2/htmlFiles/myTeam.php"); 
+                    header("Location: https://gonzaga-intramural.herokuapp.com/myTeam.php"); 
                 }
                 else{
                     echo '<script>alert("Error removing user")</script>';

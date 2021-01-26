@@ -64,7 +64,7 @@ Page to take the user to after login
             // Check if user exists
             if(!$stmt->fetch()) {
                 // Redirect user to account creation
-                header("Location: http://barney.gonzaga.edu/~lmason2/htmlFiles/createAccount.php"); 
+                header("Location: https://gonzaga-intramural.herokuapp.com/home.php"); 
                 exit();
             }
         }

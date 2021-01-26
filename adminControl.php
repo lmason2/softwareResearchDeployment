@@ -18,7 +18,7 @@ Page to let the admin add appropriate values to database
         if(isset($_POST["password"])) {
             if ($_POST["password"] != "asdfghjkl;'") {
                 $_POST['wrongPassword'] = "set";
-                header("Location: http://barney.gonzaga.edu/~lmason2/htmlFiles/admin.php");
+                header("Location: https://gonzaga-intramural.herokuapp.com/admin.php");
             }
         }
 
